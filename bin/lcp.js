@@ -4,7 +4,7 @@ var lcp = require('../lib/index.js');
 var commandLineArgs = require('command-line-args');
 
 var optionDefinitions = [
-  { name: 'port', alias: 'p', type: Number, defaultValue: 8010 },
+  { name: 'port', alias: 'p', type: Number, defaultValue: 44357 },
   {
     name: 'proxyPartial',
     type: String,
@@ -12,6 +12,8 @@ var optionDefinitions = [
   },
   { name: 'proxyUrl', type: String }
 ];
+
+console.log({optionDefinitions})
 
 try {
   var options = commandLineArgs(optionDefinitions);
