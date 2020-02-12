@@ -18,7 +18,7 @@ console.log({optionDefinitions})
 try {
   var options = commandLineArgs(optionDefinitions);
   if (!options.proxyUrl) {
-    throw new Error('--proxyUrl is required');
+  //  throw new Error('--proxyUrl is required');
   }
   lcp.startProxy(options.port, options.proxyUrl, options.proxyPartial);
 } catch (error) {
